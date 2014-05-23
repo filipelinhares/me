@@ -1,0 +1,138 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+    # To force height 100% in other elements
+    # http://stackoverflow.com/questions/7357818/100-screen-height-css
+*/
+html, body {
+  height: 100%;
+}
+
+body {
+  background: url(bg.jpg) center top no-repeat;
+  background-size: cover;
+  font: 100%/1 'Helvetica Naue', Helvetica, Verdana, Ubuntu, sans-serif;
+}
+
+.menu {
+  background: rgba(255,255,255,0.8);
+  width: 80%;
+  margin: auto;
+  padding: 30px;
+  border-bottom: 3px solid #999;
+  text-align: center;
+}
+
+.social-links {
+  display: inline-block;
+}
+
+  .social-links a {
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 5px;
+    color: #fff;
+    border-bottom: 3px solid #191919;
+    line-height: 50px;
+  }
+
+  .social-links a:active {
+    border: 0;
+    position: relative;
+    top: 3px;
+  }
+
+    /*Using 'a.class-name' because specificity*/
+  a.tt {
+    background: #2EACF6;
+    border-color: #0f537a;
+  }
+
+  a.gh {
+    background: #666666;
+  }
+
+  a.plus {
+    background: #e63e37;
+    border-color: #952824;
+  }
+
+  a.ld {
+    background: #1B85BD;
+    border-color: #165b7f;
+  }
+
+  a.email {
+    background: #fff;
+    border-color: #999;
+    color: #191919;
+  }
+
+.me {
+  text-align: center;
+  position: relative;
+  top: 110px;
+  color: #d3d3d3;
+  text-shadow: 2px 2px 0 #191919;
+}
+
+  .me h1 {
+    font-size: 6em;
+  }
+
+  .me h2 {
+    font-size: 3em;
+  }
+
+@media screen and (max-width: 570px) {
+  .menu {
+    width: 100%;
+    padding: 0;
+  }
+
+  .social-links {
+    display: block;
+  }
+
+  .social-links a {
+    width: 100%;
+    display: block;
+    border: 0;
+    border-radius: 0;
+  }
+
+  .social-links a:active {
+    position: static;
+    opacity: 0.8;
+  }
+
+  .me {
+    top: 80px;
+  }
+
+  .me h1 {
+    font-size: 4em;
+  }
+
+  .me h2 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .me h1 {
+    font-size: 3em;
+  }
+
+  .me h2 {
+    font-size: 1em;
+  }
+}
