@@ -51,6 +51,11 @@ body {
   }
 
     /*Using 'a.class-name' because specificity*/
+  a.blog{
+    background: #EA7A37;
+    border-color: #BB4411;
+  }
+
   a.tt {
     background: #2EACF6;
     border-color: #0f537a;
@@ -115,7 +120,7 @@ body {
   }
 
   .me {
-    top: 80px;
+    top: 0;
   }
 
   .me h1 {
