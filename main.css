@@ -6,18 +6,10 @@
   padding: 0;
 }
 
-/*
-    # To force height 100% in other elements
-    # http://stackoverflow.com/questions/7357818/100-screen-height-css
-*/
-html, body {
-  height: 100%;
-}
-
 body {
   background: url(bg.jpg) center top no-repeat;
   background-size: cover;
-  font: 100%/1 'Helvetica Naue', Helvetica, Verdana, Ubuntu, sans-serif;
+  font: 100%/1 'Raleway', Helvetica, Verdana, Ubuntu, sans-serif;
 }
 
 .menu {
@@ -38,10 +30,11 @@ body {
     font-size: 1.5em;
     text-decoration: none;
     border-radius: 3px;
-    padding: 5px;
+    padding: 5px 15px;
     color: #fff;
     border-bottom: 3px solid #191919;
     line-height: 50px;
+    font-weight: bold;
   }
 
   .social-links a:active {
@@ -50,7 +43,6 @@ body {
     top: 3px;
   }
 
-    /*Using 'a.class-name' because specificity*/
   a.blog{
     background: #EA7A37;
     border-color: #BB4411;
