@@ -6,8 +6,12 @@
   padding: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
-  background: url(bg.jpg) center top no-repeat;
+  background: url(bg.jpg) center top no-repeat fixed;
   background-size: cover;
   font: 100%/1 'Raleway', Helvetica, Verdana, Ubuntu, sans-serif;
 }
@@ -112,7 +116,7 @@ body {
   }
 
   .me {
-    top: 0;
+    top: 20px;
   }
 
   .me h1 {
