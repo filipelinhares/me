@@ -52,6 +52,11 @@ body {
     border-color: #BB4411;
   }
 
+  a.medium {
+    background: #333;
+    border-color: #000;
+  }
+
   a.tt {
     background: #2EACF6;
     border-color: #0f537a;
