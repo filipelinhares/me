@@ -1,7 +1,4 @@
-#Contact Page
-> Responsive contact page.
-
-###### Fork and customize your own!
+# [filipelinhares.com](http://filipelinhares.com)
 
 ##License
 MIT © [Filipe Linhares](http://filipelinhares.github.io/me/)

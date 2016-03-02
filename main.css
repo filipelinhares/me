@@ -1,144 +1,138 @@
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/*
+  COLORS
+  - rgba(240,203,170,1)
+  - rgba(187,195,207,1)
+  - rgb(158, 163, 172)
+ */
 
-html, body {
-  height: 100%;
+a {
+  color: rgb(158, 163, 172);
 }
 
 body {
-  background: url(bg.jpg) center top no-repeat fixed;
+  font-family: 'Fira Mono', sans-serif ;
+  color: #fff;
+}
+
+.Hero {
+  background: rgba(240,203,170,1);
+  background-image: url('http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/geometry2.png');
+  background-blend-mode: multiply;
+  color: #fff;
+  text-shadow: 1px 1px 0px rgb(255, 255, 255);
+  padding: 100px 8%;
+  box-shadow: 0 4px 2px rgba(51, 51, 51, .5);
+}
+
+.Hero-title {
+  font-size: 80px;
+}
+
+.Hero-sub {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.Icon {
+  fill: #fff;
+  height: 20px;
+  width: 20px;
+}
+
+.Projects {
+  background: rgba(187,195,207,1);
+  padding: 40px 8%;
+}
+
+.container {
+  padding: 40px 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.piece {
+  padding-left: 10px;
+  padding-right: 10px;
+  flex: 0 1 100%;
+  margin-bottom: 20px;
+}
+
+.Card {
+  height: 180px;
+  background: rgb(158, 163, 172);
+  box-shadow: 0 0 4px rgba(0, 0, 0, .2);
   background-size: cover;
-  font: 100%/1 'Raleway', Helvetica, Verdana, Ubuntu, sans-serif;
-}
-
-.menu {
-  background: rgba(255,255,255,0.8);
-  width: 80%;
-  margin: auto;
-  padding: 30px;
-  border-bottom: 3px solid #999;
-  text-align: center;
-}
-
-.social-links {
-  display: inline-block;
-}
-
-  .social-links a {
-    text-align: center;
-    font-size: 1.5em;
-    text-decoration: none;
-    border-radius: 3px;
-    padding: 5px 15px;
-    color: #fff;
-    border-bottom: 3px solid #191919;
-    line-height: 50px;
-    font-weight: bold;
-  }
-
-  .social-links a:active {
-    border: 0;
-    position: relative;
-    top: 3px;
-  }
-
-  a.blog{
-    background: #EA7A37;
-    border-color: #BB4411;
-  }
-
-  a.medium {
-    background: #333;
-    border-color: #000;
-  }
-
-  a.tt {
-    background: #2EACF6;
-    border-color: #0f537a;
-  }
-
-  a.gh {
-    background: #666666;
-  }
-
-  a.plus {
-    background: #e63e37;
-    border-color: #952824;
-  }
-
-  a.ld {
-    background: #1B85BD;
-    border-color: #165b7f;
-  }
-
-  a.email {
-    background: #fff;
-    border-color: #999;
-    color: #191919;
-  }
-
-.me {
-  text-align: center;
   position: relative;
-  top: 110px;
-  color: #d3d3d3;
-  text-shadow: 2px 2px 0 #191919;
+  opacity: 0;
+  transition: all 2s;
 }
 
-  .me h1 {
-    font-size: 6em;
-  }
+.Card.placed {
+  opacity: 1;
+}
 
-  .me h2 {
-    font-size: 3em;
-  }
+.Card-header {
+  z-index: 4000;
+  position: relative;
+  padding: 20px;
+}
 
-@media screen and (max-width: 570px) {
-  .menu {
-    width: 100%;
-    padding: 0;
-  }
+.Card-title {
+  font-size: 25px;
+  font-weight: 700;
+}
 
-  .social-links {
-    display: block;
-  }
+.Card-link {
+  color: #fff;
+}
 
-  .social-links a {
-    width: 100%;
-    display: block;
-    border: 0;
-    border-radius: 0;
-  }
+.Card-icon {
+  float: right;
+  margin-top: 7px;
+}
 
-  .social-links a:active {
-    position: static;
-    opacity: 0.8;
-  }
+.Card-desc {
+  margin-top: 10px;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 400;
+}
 
-  .me {
-    top: 20px;
-  }
+.Footer {
+  background: rgb(158, 163, 172);
+  padding: 10px;
+  text-align: right;
+}
 
-  .me h1 {
-    font-size: 4em;
-  }
+.error {
+  display: block;
+}
 
-  .me h2 {
-    font-size: 2em;
+.error.hide {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .piece {
+    flex-basis: 50%;
   }
 }
 
-@media screen and (max-width: 320px) {
-  .me h1 {
-    font-size: 3em;
+@media screen and (min-width: 800px) {
+  .piece {
+    flex-basis: 33.3333%;
   }
+}
 
-  .me h2 {
-    font-size: 1em;
+@media screen and (min-width: 1024px) {
+  .piece {
+    flex-basis: 25%;
   }
 }
