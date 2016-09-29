@@ -1,75 +1,103 @@
 var projects = [
   {
+    name: 'Tribo Viva',
+    description: '[pt-BR] Plataforma de consumo colaborativo',
+    repo: 'codelandev/tribo-viva'
+  },
+  {
+    name: 'Serenata de Amor',
+    description: '[pt-BR] Robôs lutando contra a corrupção no Brasil',
+    repo: 'datasciencebr/serenata-de-amor'
+  },
+  {
     name: 'funkcss',
-    description: 'Funktional CSS'
+    description: 'funkss is a functional CSS library.',
+    repo: 'filipelinhares/funkcss'
   },
   {
     name: 'toth',
-    description: 'Styleguide generator that just work'
+    description: 'Styleguide generator that just work',
+    repo: 'filipelinhares/toth'
   },
   {
-    name: 'awesome-slack',
-    description: 'A list of communities powered by Slack'
+    name: 'Awesome Slack',
+    description: 'A list of communities powered by Slack',
+    repo: 'filipelinhares/awesome-slack'
   },
   {
-    name: 'sanilize.css',
-    description: 'A merge between sanitize.css and normalize.css'
+    name: 'ress',
+    description: 'Modern CSS reset',
+    repo: 'filipelinhares/ress'
   },
   {
     name: 'onde-ta',
-    description: '[pt-BR] Rastreie suas encomendas'
+    description: '[pt-BR] Rastreie suas encomendas',
+    repo: 'filipelinhares/onde-ta'
   },
   {
     name: 'cssguard',
-    description: 'An easy way to test your CSS'
+    description: 'An easy way to test your CSS',
+    repo: 'filipelinhares/cssguard'
   },
   {
     name: 'hex-color-resolve',
-    description: 'Resolve hex colors shorthand.'
+    description: 'Resolve hex colors shorthand.',
+    repo: 'filipelinhares/hex-color-resolve'
   },
   {
-    name: 'email-template-notes',
-    description: 'Notes about styling emails'
+    name: 'Email notes',
+    description: 'Notes about styling emails',
+    repo: 'filipelinhares/email-template-notes'
   },
   {
     name: 'typ',
-    description: 'A simple and minimal typography template'
+    description: 'A simple and minimal typography template',
+    repo: 'filipelinhares/typ'
   },
   {
-    name: 'css-comments',
-    description: 'CSS/SASS Comments pattern'
+    name: 'CSS comments',
+    description: 'CSS/SASS Comments pattern',
+    repo: 'filipelinhares/css-comments'
   },
   {
-    name: 'monroe-theme',
-    description: 'An oh-my-zsh theme'
+    name: 'Monroe theme',
+    description: 'An oh-my-zsh theme',
+    repo: 'filipelinhares/monroe-theme'
   },
   {
-    name: 'typography-guide',
-    description: 'Some tips to keep your typography consistent'
+    name: 'Typography guide',
+    description: 'Some tips to keep your typography consistent',
+    repo: 'filipelinhares/typography-guide'
   },
   {
     name: 'gpeto',
-    description: 'Modularize your assets'
+    description: 'Modularize your assets',
+    repo: 'filipelinhares/gpeto'
   },
   {
-    name: 'mussarela',
-    description: 'An useful and simple set of SASS mixins!'
+    name: 'Mussarela',
+    description: 'An useful and simple set of SASS mixins!',
+    repo: 'filipelinhares/mussarela'
   },
   {
-    name: 'autoput',
-    description: 'Fill all inputs in your form, easy and fast'
+    name: 'Autoput',
+    description: 'Fill all inputs in your form, easy and fast',
+    repo: 'filipelinhares/autoput'
   },
   {
     name: 'dotvim',
-    description: ':w'
+    description: ':w',
+    repo: 'filipelinhares/dotvim'
   },
   {
-    name: 'WAI-ARIA-cheatsheet',
-    description: 'Aria roles and attr cheatsheet.'
+    name: 'WAI-ARIA cheatsheet',
+    description: 'Aria roles and attr cheatsheet.',
+    repo: 'filipelinhares/WAI-ARIA-cheatsheet'
   },
   {
-    name: 'vuejs-snippets-sublime',
-    description: 'Vuejs Snippets for Sublime Text'
+    name: 'Vuejs Snippets',
+    description: 'Vuejs Snippets for Sublime Text',
+    repo: 'filipelinhares/vuejs-snippets-sublime'
   }
 ];
 
@@ -95,7 +123,7 @@ var mount = function (data) {
   var desc = generateElement('p', 'Card-desc', data.description)
   var link = generateElement('a', 'Card-link')
 
-  link.href = 'http://github.com/filipelinhares/' + data.name;
+  link.href = 'http://github.com/' + data.repo;
 
   infos.appendChild(title)
   infos.appendChild(desc)

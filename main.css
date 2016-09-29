@@ -65,7 +65,7 @@ body {
 }
 
 .Card {
-  height: 180px;
+  height: 160px;
   background: rgb(158, 163, 172);
   box-shadow: 0 0 4px rgba(0, 0, 0, .2);
   background-size: cover;
@@ -85,7 +85,7 @@ body {
 }
 
 .Card-title {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 700;
 }
 
