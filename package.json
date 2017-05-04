@@ -1,0 +1,27 @@
+{
+  "name": "me",
+  "version": "1.0.0",
+  "description": "fxlypz's website",
+  "main": "index.html",
+  "scripts": {
+    "compile": "postcss -w -u postcss-responsive-type -u autoprefixer -u cssnano -o ./dist.min.css ./main.css",
+    "server": "http-server --gzip -d -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filipelinhares/me.git"
+  },
+  "author": "Filipe Linhares",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/filipelinhares/me/issues"
+  },
+  "homepage": "https://github.com/filipelinhares/me#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "cssnano": "^3.10.0",
+    "http-server": "^0.10.0",
+    "postcss-cli": "^3.2.0",
+    "postcss-responsive-type": "^0.5.1"
+  }
+}
