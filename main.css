@@ -1,138 +1,108 @@
-/*
-  COLORS
-  - rgba(240,203,170,1)
-  - rgba(187,195,207,1)
-  - rgb(158, 163, 172)
- */
+html {
+  overflow: hidden;
+  font-family: 'Fira Mono', sans-serif ;
+  color: #222;
+}
 
 a {
-  color: rgb(158, 163, 172);
+  color: #222;
+  text-decoration: none;
+  display: inline-block;
+  font-size: responsive 22px 16px;
 }
 
-body {
-  font-family: 'Fira Mono', sans-serif ;
+@media (max-width: 400px) {
+  a {
+    display: block;
+    margin-bottom: 1em;
+  }
+}
+
+a:hover,
+a:focus {
+  background-color: #222;
   color: #fff;
 }
 
-.Hero {
-  background: rgba(240,203,170,1);
-  background-image: url('http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/geometry2.png');
-  background-blend-mode: multiply;
-  color: #fff;
-  text-shadow: 1px 1px 0px rgb(255, 255, 255);
-  padding: 100px 8%;
-  box-shadow: 0 4px 2px rgba(51, 51, 51, .5);
-}
-
-.Hero-title {
-  font-size: 80px;
-}
-
-.Hero-sub {
-  font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.Icon {
-  fill: #fff;
-  height: 20px;
-  width: 20px;
-}
-
-.Projects {
-  background: rgba(187,195,207,1);
-  padding: 40px 8%;
-}
-
-.container {
-  padding: 40px 0;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
+.hero {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: -10px;
-  margin-right: -10px;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  margin-left: 5%;
 }
 
-.piece {
-  padding-left: 10px;
-  padding-right: 10px;
-  flex: 0 1 100%;
-  margin-bottom: 20px;
-}
-
-.Card {
-  height: 160px;
-  background: rgb(158, 163, 172);
-  box-shadow: 0 0 4px rgba(0, 0, 0, .2);
-  background-size: cover;
-  position: relative;
+.title {
+  font-size: responsive 50px 150px;
   opacity: 0;
-  transition: all 2s;
+  display: flex;
+  align-items: center;
 }
 
-.Card.placed {
-  opacity: 1;
+.profile {
+  display: inline-block;
+  height: 8vw;
+  width: 8vw;
+  outline: none;
+  max-height: 130px;
+  max-width: 130px;
+  min-height: 35px;
+  min-width: 35px;
+  margin-right: .1em;
+  background-color: #222;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .2s cubic-bezier(.17,.67,.83,.67);
 }
 
-.Card-header {
-  z-index: 4000;
-  position: relative;
-  padding: 20px;
+.profile:active {
+  transform: scale(.9);
 }
 
-.Card-title {
-  font-size: 22px;
-  font-weight: 700;
+.nav {
+  margin-top: 30px;
+  font-size: 18px;
+  opacity: 0;
 }
 
-.Card-link {
-  color: #fff;
+.nav a:not(:last-child) {
+  margin-right: 10px;
 }
 
-.Card-icon {
-  float: right;
-  margin-top: 7px;
+.sub {
+  font-size: responsive 20px 40px;
+  opacity: 0;
+  mix-blend-mode: difference;
 }
 
-.Card-desc {
-  margin-top: 10px;
-  line-height: 1.5;
-  font-size: 16px;
-  font-weight: 400;
+.src {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  color: rgba(50, 50, 50, .4);
 }
 
-.Footer {
-  background: rgb(158, 163, 172);
-  padding: 10px;
-  text-align: right;
-}
-
-.error {
-  display: block;
-}
-
-.error.hide {
-  display: none;
-}
-
-@media screen and (min-width: 600px) {
-  .piece {
-    flex-basis: 50%;
+@keyframes in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
-@media screen and (min-width: 800px) {
-  .piece {
-    flex-basis: 33.3333%;
-  }
+.title {
+  animation: in 1.5s linear alternate forwards;
+  animation-delay: 1s;
 }
 
-@media screen and (min-width: 1024px) {
-  .piece {
-    flex-basis: 25%;
-  }
+.nav {
+  animation: in 1.5s linear alternate forwards;
+  animation-delay: 2.8s;
+}
+
+.sub {
+  animation: in 1.5s linear alternate forwards;
+  animation-delay: 2.5s;
 }
