@@ -1,7 +1,7 @@
 {
   "name": "me",
   "version": "1.0.0",
-  "description": "fxlypz's website",
+  "description": "flp's website",
   "main": "index.html",
   "scripts": {
     "compile": "postcss -w -u postcss-responsive-type -u autoprefixer -u cssnano -o ./dist.min.css ./main.css",
