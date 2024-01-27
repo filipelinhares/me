@@ -106,3 +106,8 @@ a:focus {
   animation: in 1.5s linear alternate forwards;
   animation-delay: 2.5s;
 }
+
+.stroke {
+    text-decoration: line-through;
+    opacity: .1;
+}
