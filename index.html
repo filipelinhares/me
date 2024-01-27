@@ -1,68 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>filipe</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.ico">
+  <head>
+    <meta charset="utf-8" />
+    <title>filipe</title>
+    <meta
+      name="description"
+      content="filipe linhares - software development & design"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" />
 
-  <link href='https://fonts.googleapis.com/css?family=Fira+Mono:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="sanilize.css">
-  <link rel="stylesheet" href="dist.min.css">
-</head>
-<body>
-  <div class="hero">
-      <h1 class="title"><button class="profile"></button><span>filipe<span></h1>
-      <h2 class="sub">ui engineer</h2>
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/ress@2.0.4/dist/ress.min.css"
+    />
+    <link rel="stylesheet" href="/dist.min.css" />
+  </head>
+
+  <body>
+    <div class="hero">
+      <h1 class="title">
+        <button class="profile"></button
+        ><span>filipe</span>
+      </h1>
+      <h2 class="sub">software development & design</h2>
       <nav class="nav">
+        <a href="https://blog.filipelinhares.com">Blog</a>
         <a href="https://medium.com/@filipelinhares">Essays</a>
         <a href="https://github.com/filipelinhares">Projects</a>
-        <a href="https://twitter.com/ofilipelinhares">Twitter</a>
+        <a href="https://www.linkedin.com/in/filipelinhares">LinkedIn</a>
       </nav>
-      <a href="" class="src">&lt;/&gt;</a>
-  </div>
-  <script charset="utf-8">
-    document.addEventListener('DOMContentLoaded', function () {
-      var counter = 0;
-      document.querySelector('.profile')
-        .addEventListener('click', function () {
-          debugger
-          counter += 1;
+      <span class="src">2023</span>
+    </div>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C90FJ2TKQB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-          if (counter === 9) {
-            location.href = 'https://www.youtube.com/watch?v=be37-T72DNk';
-          }
-        });
-    });
-  </script>
-  <!-- Yandex.Metrika counter -->
-  <script type="text/javascript">
-      (function (d, w, c) {
-          (w[c] = w[c] || []).push(function() {
-              try {
-                  w.yaCounter35805480 = new Ya.Metrika({
-                      id:35805480,
-                      clickmap:true,
-                      trackLinks:true,
-                      accurateTrackBounce:true,
-                      webvisor:true
-                  });
-              } catch(e) { }
-          });
+        gtag('config', 'G-C90FJ2TKQB');
+        const year = new Date()
 
-          var n = d.getElementsByTagName("script")[0],
-              s = d.createElement("script"),
-              f = function () { n.parentNode.insertBefore(s, n); };
-          s.type = "text/javascript";
-          s.async = true;
-          s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-          if (w.opera == "[object Opera]") {
-              d.addEventListener("DOMContentLoaded", f, false);
-          } else { f(); }
-      })(document, window, "yandex_metrika_callbacks");
-  </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/35805480" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-  <!-- /Yandex.Metrika counter -->
-</body>
+        document.querySelector('.src').textContent = year.getFullYear()
+    </script>
+  </body>
 </html>

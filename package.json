@@ -5,6 +5,7 @@
   "main": "index.html",
   "scripts": {
     "compile": "postcss -w -u postcss-responsive-type -u autoprefixer -u cssnano -o ./dist.min.css ./main.css",
+    "build": "postcss -u postcss-responsive-type -u autoprefixer -u cssnano -o ./dist.min.css ./main.css",
     "server": "http-server --gzip -d -o"
   },
   "repository": {
