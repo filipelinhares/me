@@ -1,11 +1,19 @@
+:root {
+    --text-color: #ddcfb8;
+    --seconday-text: #bcb09c;
+    --bg-color: #121212;
+}
+
+
 html {
   overflow: hidden;
   font-family: 'Fira Mono', sans-serif ;
-  color: #222;
+  background: var(--bg-color);
+  color: var(--text-color);
 }
 
 a {
-  color: #222;
+  color: var(--secondary-text);
   text-decoration: none;
   display: inline-block;
   font-size: responsive 22px 16px;
@@ -50,7 +58,7 @@ a:focus {
   min-height: 35px;
   min-width: 35px;
   margin-right: .1em;
-  background-color: #222;
+  background-color: var(--text-color);
   border-radius: 50%;
   cursor: pointer;
   transition: .2s cubic-bezier(.17,.67,.83,.67);
@@ -74,13 +82,15 @@ a:focus {
   font-size: responsive 20px 40px;
   opacity: 0;
   mix-blend-mode: difference;
+  color: var(--seconday-text);
 }
 
 .src {
   position: absolute;
   bottom: 20px;
   right: 30px;
-  color: rgba(50, 50, 50, .4);
+  color: var(--seconday-text);
+  opacity: .8;
 }
 
 @keyframes in {
