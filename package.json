@@ -19,10 +19,9 @@
   },
   "homepage": "https://github.com/filipelinhares/me#readme",
   "devDependencies": {
-    "autoprefixer": "^6.7.7",
-    "cssnano": "^3.10.0",
-    "http-server": "^0.10.0",
-    "postcss-cli": "^3.2.0",
-    "postcss-responsive-type": "^0.5.1"
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.0.6",
+    "postcss-cli": "^11.0.1",
+    "postcss-responsive-type": "^1.0.0"
   }
 }
